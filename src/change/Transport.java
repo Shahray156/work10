@@ -1,4 +1,4 @@
-package com.company;
+package change;
 
 public abstract class Transport {
 
@@ -16,5 +16,15 @@ public abstract class Transport {
 
     public int getWheelsCount() {
         return wheelsCount;
+    }
+
+    public void setModelName(String modelName) {this.modelName = modelName;}
+
+    public void setWheelsCount(int wheelsCount) {this.wheelsCount = wheelsCount;}
+
+    public void updateTyre() {
+        for(int i = 0; i < getWheelsCount(); i++) {
+            System.out.println("Меняем покрушку");
+        }
     }
 }

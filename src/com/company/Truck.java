@@ -1,4 +1,6 @@
- public class Truck {
+package com.company;
+
+public class Truck {
 
         public String modelName;
         public int wheelsCount;
